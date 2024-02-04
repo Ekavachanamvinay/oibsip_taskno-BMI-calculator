@@ -1,0 +1,21 @@
+# weight in "kg"
+input_weight=int(input())
+# height in "m"
+input_height=float(input())
+BMI=input_weight/input_height**2
+if BMI < 16.0 :
+    print(f"Your BMI is {BMI}, You are Underweight (Severe thinness)")
+elif BMI < 17.0 :
+    print(f"Your BMI is {BMI}, You are Underweight (Moderate thinness)")
+elif BMI < 18.5 :
+    print(f"Your BMI is {BMI}, You are Underweight (Mild thinness)")
+elif BMI < 25.0 :
+    print(f"Your BMI is {BMI}, You are Normal range")
+elif BMI < 30.0 :
+    print(f"Your BMI is {BMI}, You are Overweight (Pre-obese)")
+elif BMI < 35.0 :
+    print(f"Your BMI is {BMI}, You are Obese (Class I)")
+elif BMI < 40.0 :
+    print(f"Your BMI is {BMI}, You are Obese (Class II)")
+elif BMI >= 40.0 :
+    print(f"Your BMI is {BMI}, You are Obese (Class III)")
